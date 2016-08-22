@@ -1,14 +1,14 @@
-## Code Book
+# Code Book
 
 This code book describes the variables found in 'averages_data.txt'.
 This dataset is derived from the "Human Activity Recognition Using Smartphones Data Set" which was originally made avaiable here: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
-# Identifiers
+## Identifiers
 
 * `Subject`: it's the ID of the test subject;
 * `Activity`: it's the type of activity performed when the corresponding measurements were taken.
 
-# Variables
+## Variables
 
 * `XTrain`, `YTrain`, `XTest`, `YTest`, `SubjectTrain` and `SubjectTest` contain the data from the downloaded files;
 * `XData`, `YData` and `SubjectData` merge the previous datasets to further analysis;
@@ -17,7 +17,7 @@ This dataset is derived from the "Human Activity Recognition Using Smartphones D
 * `AllDATA` merges `XData`, `YData` and `SubjectData` in a big dataset;
 * Finally, `averages_data` contains the relevant averages which will be later stored in a `.txt` file. `ddply()` from the plyr package is used to apply `colMeans()` and ease the development.
 
-# Measurements
+## Measurements
 
 * `tBodyAccMeanX`
 * `tBodyAccMeanY`
@@ -99,7 +99,7 @@ This dataset is derived from the "Human Activity Recognition Using Smartphones D
 * `fBodyBodyGyroJerkMagStd`
 * `fBodyBodyGyroJerkMagMeanFreq`
 
-# Activity Labels
+## Activity Labels
 
 * `WALKING` (value `1`): subject was walking during the test
 * `WALKING_UPSTAIRS` (value `2`): subject was walking up a staircase during the test
